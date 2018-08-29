@@ -32,7 +32,7 @@
     }
   },
   "variables": {
-    "storageAccountName": "[tolower( concat('cisawithsse', substring(parameters('storageAccountType'), 0, 2), uniqueString(subscription().id, resourceGroup().id) ))]"
+    "storageAccountName": "[tolower( concat('cisa', substring(parameters('storageAccountType'), 0, 2), uniqueString(subscription().id, resourceGroup().id) ))]"
   },
   "resources": [
     {
